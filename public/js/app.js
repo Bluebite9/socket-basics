@@ -1,4 +1,7 @@
 var socket = io();
+//var now = moment();
+
+//console.log(now.format('Do-MMM-YYYY h:mm a'));
 
 socket.on('connect', function () {
     console.log('Connected to socket.io server!')
