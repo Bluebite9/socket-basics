@@ -13,7 +13,8 @@ io.on('connection', function (socket) {
         console.log('Message received: ' + message.text);
         
         //io.emit catre toata lumea incluzandu-l pe cel care trimite
-        socket.broadcast.emit('message', message);
+        //socket.broadcast.emit catre toata lumea excluzandu-l pe cal care trimite
+        io.emit('message', message);
     });
     
     socket.emit('message', {
