@@ -22,6 +22,7 @@ io.on('connection', function (socket) {
     var timpestamp = 
     
     socket.emit('message', {
+        name: 'System',
         text: 'Welcome to the chat application of the Pack!',
         timestamp: moment().valueOf()
     });
